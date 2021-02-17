@@ -1,0 +1,84 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgb(19, 13, 13);
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(64, 112, 112),
+    rgb(137, 203, 219)
+  );
+}
+
+body {
+  margin: 0;
+}
+.flex-container {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  border-radius: 5px;
+  color: rgb(217, 236, 217);
+  background-image: linear-gradient(
+    to right,
+    rgb(27, 52, 59),
+    rgb(61, 114, 114)
+  );
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 50px;
+  margin-left: 50px;
+  border: 1px solid rgb(38, 222, 255);
+}
+
+h1:hover {
+  box-shadow: 0px -70px 300px 5px whitesmoke;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(65, 125, 141),
+    rgb(100, 182, 182)
+  );
+  color: rgb(254, 255, 255);
+  font-size: 55px;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 0;
+  margin-right: -3px;
+  animation-name: test;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes test {
+  0% {
+    color: rgb(254, 255, 255);
+  }
+  25% {
+    color: rgb(36, 169, 173);
+    border: 2px solid rgb(38, 222, 255);
+    box-shadow: none;
+    margin-right: -20px;
+    font-size: 70px;
+    background-image: linear-gradient(
+      to right,
+      rgb(113, 215, 243),
+      rgb(181, 235, 235)
+    );
+  }
+  50% {
+    color: rgb(115, 250, 255);
+  }
+  75% {
+    color: rgb(254, 255, 255);
+  }
+  100% {
+    color: rgb(254, 255, 255);
+  }
+}
